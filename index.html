@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Flappy Ball AI</title>
+    <meta name="description" content="An AI playing a Flappy Bird clone">
+    <meta name="author" content="Jactami">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="lib/nn.js"></script>
+    <script src="lib/matrix.js"></script>
+    <script src="agent.js"></script>
+    <script src="pipe.js"></script>
+    <script src="main.js"></script>
+
+    <style>
+        body {
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body onload="preload()">
+    <div>
+        <p>Press SPACE to start or pause the simulation.</p>
+        <p>
+            <span id="rate"></span>
+            <input type="range" min="1" max="100" value="1" step="1" id="rateSlider" style="vertical-align: middle;">
+            <span id="rateVal"></span>
+        </p>
+        <p id="highScore"></p>
+        <p id="lastScore"></p>
+        <p id="currentScore"></p>
+        <p id="gen"></p>
+        <p id="population"></p>
+    </div>
+</body>
+
+</html>
